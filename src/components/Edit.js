@@ -37,6 +37,7 @@ export default function Edit() {
             displayName: LoginName, photoURL: url
           }).then(() => {
            alert("updated");
+           nav("/");
           }).catch((error) => {
             
           });
