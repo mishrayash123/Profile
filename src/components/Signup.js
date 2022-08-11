@@ -22,7 +22,7 @@ export default function Signup() {
     };
 
     return (
-        <div className="card11 mt-44 mx-auto bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-900 border border-dark rounded  ">
+        <div className="card11 mt-44 mx-auto bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-900 border border-dark rounded  mb-56">
             <form onSubmit={signup}
                 className="mt-3 ">
                 <h5 className="text-center m-3 text-white ">Sign up</h5>

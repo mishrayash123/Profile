@@ -55,7 +55,7 @@ export default function Edit() {
     };
 
     return (
-        <div className="card23 mt-56  mx-auto bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-900 border border-dark rounded  ">
+        <div className="card23 mt-56  mx-auto bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-900 border border-dark rounded mb-56 ">
             <h5 className="text-center m-3 text-white">Edit</h5>
             <div className="m-3">
                 <label className="form-label text-white">Name</label>

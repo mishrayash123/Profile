@@ -25,7 +25,7 @@ export default function Login() {
     };
 
     return (
-        <div className=" card12 mt-44 mx-auto bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-900 border border-dark rounded  ">
+        <div className=" card12 mt-44 mx-auto bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-900 border border-dark rounded mb-56 ">
             <form onSubmit={login}
                 className="mt-3 ">
                 <h5 className="text-center m-3 text-white">Log in</h5>

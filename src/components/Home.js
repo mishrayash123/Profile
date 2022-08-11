@@ -19,7 +19,7 @@ function Home() {
     }, [auth.currentUser]);
 
     return (
-        <div class="card mt-56  mx-auto bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-900 ">
+        <div class="card mt-56  mx-auto bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-900 mb-56">
             <img src={
                     user.photoURL
                 }
