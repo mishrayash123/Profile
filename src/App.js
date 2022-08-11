@@ -10,10 +10,8 @@ import { auth} from "./components/firebase-config";
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
-
 function App() {
   const [ypt, setypt] = useState(false);
-
 
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
@@ -28,9 +26,7 @@ function App() {
   }, [auth.currentUser]);
 
 
-
   return (
-  
    <BrowserRouter>
     <Navbar />
         <Routes>
@@ -47,8 +43,7 @@ function App() {
                 <Login />
                
                 </div>
-            } </>
-                   
+            } </>     
               } />
          <Route path="/signup" element={
         <div>

@@ -6,13 +6,9 @@ import {auth} from './firebase-config';
 import '../CSS/signup.css';
 
 export default function Signup() {
-
     const [Email, setEmail] = useState("");
     const [Password, setPassword] = useState("");
     const [sy, setsy] = useState("");
-
-
-    
 
     const signup = async (event) => {
         event.preventDefault();
@@ -27,7 +23,6 @@ export default function Signup() {
 
     return (
         <div className="card11 mt-44 mx-auto bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-900 border border-dark rounded  ">
-            
             <form onSubmit={signup}
                 className="mt-3 ">
                 <h5 className="text-center m-3 text-white ">Sign up</h5>
@@ -57,7 +52,6 @@ export default function Signup() {
         <button type="submit" className="btn btn-dark m-3 hover:bg-black "
             onClick={signup}>Sign up</button>
     </form>
-    
 </div>
     );
 }

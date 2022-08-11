@@ -5,36 +5,31 @@ import {signInWithEmailAndPassword} from "firebase/auth";
 import {auth} from './firebase-config';
 import '../CSS/login.css';
 
-
-
 export default function Login() {
     const [LoginEmail, setaLoginEmail] = useState("");
     const [LoginPassword, setLoginPassword] = useState("");
     const [sk, setsk] = useState("");
     const nav = useNavigate();
 
-
     const login = async (event) => {
         event.preventDefault();
-        signInWithEmailAndPassword(auth, LoginEmail, LoginPassword).then((userCredential) => { // Signed in
+        signInWithEmailAndPassword(auth, LoginEmail, LoginPassword).then((userCredential) => {
             const user = userCredential.user;
             alert("user signed in successfully")
             nav("/");
-            // ...
         }).catch((error) => {
             const errorCode = error.code;
             setsk(errorCode);
         });
-        
+
     };
 
     return (
         <div className=" card12 mt-44 mx-auto bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-900 border border-dark rounded  ">
-        
             <form onSubmit={login}
                 className="mt-3 ">
                 <h5 className="text-center m-3 text-white">Log in</h5>
-               
+
                 <div className="m-3">
                     <label className="form-label text-white">Email address</label>
                     <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
@@ -53,7 +48,6 @@ export default function Login() {
                         }
                     }/>
             </div>
-            
         <p className="m-3 text-warning">
             {sk} </p>
         <p className="m-3 text-white">If you don't have an account :
@@ -62,7 +56,7 @@ export default function Login() {
         <button type="submit" className="btn btn-dark m-3 hover:bg-black"
             onClick={login}>Log in</button>
     </form>
-    
+
 </div>
     );
 }
