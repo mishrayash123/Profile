@@ -1,7 +1,6 @@
 import './App.css';
 import React, {useState, useEffect} from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-// import NavBar from "./components/NavBar"
 import Home from "./components/Home";
 import Login from "./components/Login";
 import Signup from "./components/Signup"
@@ -9,6 +8,7 @@ import Edit from "./components/Edit"
 import { onAuthStateChanged } from "firebase/auth";
 import { auth} from "./components/firebase-config";
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -57,6 +57,7 @@ function App() {
                 </div>
         } />
         </Routes>
+        <Footer />
         </BrowserRouter>
   );
 }

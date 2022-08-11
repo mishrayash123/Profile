@@ -3,6 +3,7 @@ import {useState} from "react";
 import {Link} from 'react-router-dom'
 import {createUserWithEmailAndPassword} from "firebase/auth";
 import {auth} from './firebase-config';
+import '../CSS/signup.css';
 
 export default function Signup() {
 
@@ -25,7 +26,7 @@ export default function Signup() {
     };
 
     return (
-        <div className="mt-56 w-50 mx-auto bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-900 border border-dark rounded  ">
+        <div className="card11 mt-44 mx-auto bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-900 border border-dark rounded  ">
             
             <form onSubmit={signup}
                 className="mt-3 ">

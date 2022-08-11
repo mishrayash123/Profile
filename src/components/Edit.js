@@ -5,6 +5,7 @@ import {ref, uploadBytes, getDownloadURL} from "firebase/storage"
 import { auth } from "./firebase-config";
 import { onAuthStateChanged } from "firebase/auth";
 import { getAuth, updateProfile } from "firebase/auth";
+import '../CSS/Edit.css';
 
 
 
@@ -69,7 +70,7 @@ export default function Edit() {
    
 
     return (
-        <div className="mt-56 w-50 mx-auto bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-900 border border-dark rounded  ">
+        <div className="card23 mt-56  mx-auto bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-900 border border-dark rounded  ">
 
            
                 

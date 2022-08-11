@@ -21,7 +21,7 @@ const Navbar =({setfav}) => {
         if (user) {
           setya(true);
           
-            setst(user.email[0]);
+            setst(user.displayName[0]);
             
         } else {
           setya(false);
@@ -51,13 +51,9 @@ const logout = async () => {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0">
-                {/* <img
-                  className="h-14 w-14"
-                  src={img1}
-                  alt="Workflow"
-                /> */}
+                
               </div>
-                <a className="text-primary underline decoration-wavy decoration-4 italic text-2xl mb-2" href="/">Profile</a>
+                <a className="text-primary italic text-2xl mb-2" href="/">Profile</a>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
                 <Link to="/" className=" hover:bg-blue-900  text-red-900 hover:text-white  px-3 py-2 rounded-md text-sm font-medium">

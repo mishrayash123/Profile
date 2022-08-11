@@ -3,6 +3,7 @@ import {useState} from "react";
 import {Link, useNavigate} from 'react-router-dom'
 import {signInWithEmailAndPassword} from "firebase/auth";
 import {auth} from './firebase-config';
+import '../CSS/login.css';
 
 
 
@@ -28,7 +29,7 @@ export default function Login() {
     };
 
     return (
-        <div className="mt-56 w-50 mx-auto bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-900 border border-dark rounded  ">
+        <div className=" card12 mt-44 mx-auto bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-900 border border-dark rounded  ">
         
             <form onSubmit={login}
                 className="mt-3 ">
